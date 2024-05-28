@@ -1,0 +1,52 @@
+.container{
+    width:600px;
+    height:600px;
+    overflow:scroll;
+    background-color: rgb(133, 191, 214);
+    padding:20px;
+    color:white;
+    box-sizing:border-box;
+    margin:10px auto;   
+    /* //居中 */
+    
+}
+h3,
+.user_form,
+.btn_group{
+    display:flex;
+    justify-content: center;
+    /* 水平居中 */
+}
+.user_form{
+    margin-bottom: 1rem;
+}
+ul li{
+    list-style: none;
+    counter-increment: item;
+    margin-bottom: 1rem;
+}
+ul li::before{
+    content:counter(item);
+    background-color:rgb(86, 86, 181);
+    color: white;
+    font-weight: bold;
+    padding:3px 8px;
+    border-radius: 3px;
+    margin-right:1rem;
+}
+button{
+    color: white;
+    background-color: pink;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 8px ;
+   border: none;
+    border-radius: 5px;
+    margin: 10px 50px; 
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(61, 58, 54);
+    transition: all 0.4 ease;
+}
